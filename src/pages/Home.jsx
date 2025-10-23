@@ -1,0 +1,56 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Sidebar from '../components/sidebar/Sidebar';
+import Navbar from '../components/navbar/Navbar';
+import Navbarcomponent from '../components/navbar/Navbar';
+import Headerbar from '../components/headerbar/headerbar';
+import Subheader from '../components/Subheader/Subheader';
+import Dataheader from '../components/Dataheader/Dataheader';
+import Datarow from '../components/Datarow/Datarow';
+import Dashboard from './Dashboard';
+import { Outlet } from 'react-router-dom';
+
+function Home(){
+    return(
+        <>
+            <div className="container-layout">
+                <div className="navbar-layout">
+                    <Navbarcomponent/>
+                </div>
+                <div className="sidebar-layout">
+                    <Sidebar/>
+                </div>
+                <div className="main-layout-container">
+                    {/* <div className="header1-layout">
+                        <Headerbar/>
+                    </div>
+                    <div className="header2-layout">
+                        <Subheader/>
+                    </div>
+                    <div className="data-header-layout">
+                        <Dataheader/>
+                    </div>
+                    <div className="main-layout">
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                        <Datarow/>
+                    </div> */}
+
+                    <Outlet/>
+
+                </div>
+            </div>
+        
+        </>
+
+
+    );
+}
+
+export default Home
