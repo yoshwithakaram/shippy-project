@@ -1,0 +1,72 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  padding-left: 0.5rem;
+  height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* spacing between image and text */
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+
+}
+
+.logo-text {
+  margin: 0;
+  font-size: 26px;
+  font-weight:900;
+  color: #333;
+  cursor: pointer;
+}
+
+.logo-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for polish */
+  cursor: pointer;
+}
+
+.container-sidebar-components{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-div{
+    display: flex;
+    padding-left: 5px;
+    gap: 12px;
+    width: inherit;
+    justify-content: flex-start;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.sidebar-div:hover {
+  background-color: #f0f0f0; /* light grey */
+}
+
+
+.side-icon .icon-path {
+  fill: white; /* default fill */
+  stroke: black; /* black outline */
+  stroke-width: 0.75px; /* adjust thickness */
+  transition: fill 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.side-icon:hover .icon-path {
+  fill:black; /* hover fill */
+}
+
+
+
+
