@@ -21,28 +21,6 @@ function Home(){
                     <Sidebar/>
                 </div>
                 <div className="main-layout-container">
-                    {/* <div className="header1-layout">
-                        <Headerbar/>
-                    </div>
-                    <div className="header2-layout">
-                        <Subheader/>
-                    </div>
-                    <div className="data-header-layout">
-                        <Dataheader/>
-                    </div>
-                    <div className="main-layout">
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                        <Datarow/>
-                    </div> */}
-
                     <Outlet/>
 
                 </div>
