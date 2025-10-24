@@ -7,27 +7,29 @@ function Newcontract() {
     return(
         <>
         <div className='main-layout-container-newcontract'>
-        <div className="header1-layout"> {/*present in Dashboard.jsx and App.css*/}
-            <Header/>
-        </div>
-        <div className='row2-div'>
-            <div className='button-div'>
-                <button type="button" class="btn btn-secondary">Sea</button>
-                <button type="button" class="btn btn-light">Air</button>
+            <div className="header1-layout"> {/*present in Dashboard.jsx and App.css*/}
+                <Header/>
             </div>
-            <div className='left-div'>
-                <h4>Inco Terms</h4>
-                <div className='dropdown-div'>
-                <Form.Select aria-label="Default select example">
-                    <option>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </Form.Select>
+            <div className='newcontract-main'>
+                <div className="newcontract-top-left">
+                    <div className="btn btn-dark px-5">Sea</div>
+                    <div className="btn btn-light px-5">Air</div>
+                </div>
+                <div className="newcontract-top-right">
+                    Hi
+                </div>
+                <div className="newcontract-middle-left">
+                    Hi
+                </div>
+                <div className="newcontract-middle-right">
+                    Hi
+                </div>
+                <div className="newcontract-bottom">
+                    Hi
                 </div>
             </div>
-       </div>
         </div>
+
         </>
        
     );

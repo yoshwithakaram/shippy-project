@@ -48,7 +48,7 @@
 }
 
 .main-layout-container-dashboard{
-  grid-area: main-layout;
+  /* grid-area: main-layout; */
   background-color: white;
   display: grid;
   grid-template-rows: 60px 60px 50px 1fr ;
@@ -108,20 +108,56 @@
 }
 
 .main-layout-container-newcontract{
-  grid-area: main-layout;
-  background-color: white;
+  /* grid-area: main-layout; */
+  background-color:aqua;
   display: grid;
   grid-template-rows: 60px 1fr ;
   grid-template-columns: 1fr;
   grid-template-areas: 
             "header1-layout"
-            "header2-layout"
-            "data-header-layout"
-            "main-layout";
-  /* height: 100vh; */
-  overflow: hidden;
-  max-height: 100vh;
+            "newcontract-main";
+  height: 100vh;
+
 }
 
+.newcontract-main{
+  grid-area: newcontract-main;
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 80px 80px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+            "newcontract-top-left newcontract-top-right"
+            "newcontract-middle-left newcontract-middle-right" 
+            "newcontract-bottom newcontract-bottom";
+}
 
+.newcontract-top-left{
+  grid-area: newcontract-top-left;
+  background-color: chocolate;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  padding-left: 1rem;
+}
 
+.newcontract-top-right{
+  grid-area: newcontract-top-right;
+  background-color: rgb(93, 210, 30);
+}
+
+.newcontract-middle-left{
+  grid-area: newcontract-middle-left;
+  background-color: pink;
+}
+
+.newcontract-middle-right{
+  grid-area: newcontract-middle-right;
+  background-color:gold
+}
+
+.newcontract-bottom{
+  grid-area: newcontract-bottom;
+  background-color: bisque;
+}
