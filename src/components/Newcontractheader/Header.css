@@ -1,0 +1,11 @@
+
+.button-div{
+    display: flex;
+    gap: 50px;
+}
+.button-div{
+    padding: 30px 25px;
+}
+.left-div{
+    display: flex;
+}

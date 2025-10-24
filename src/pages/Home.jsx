@@ -8,6 +8,7 @@ import Dataheader from '../components/Dataheader/Dataheader';
 import Datarow from '../components/Datarow/Datarow';
 import Dashboard from './Dashboard';
 import { Outlet } from 'react-router-dom';
+import Newcontract from './Newcontract';
 
 function Home(){
     return(

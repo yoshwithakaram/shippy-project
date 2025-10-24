@@ -9,6 +9,7 @@ import Subheader from "../components/Subheader/Subheader";
 function Dashboard(){
     return(
         <>
+        <div className='main-layout-container-dashboard'>
             <div className="header1-layout">
                 <Headerbar/>
             </div>
@@ -30,6 +31,7 @@ function Dashboard(){
                 <Datarow/>
                 <Datarow/>
             </div>
+        </div>
 
         
         </>

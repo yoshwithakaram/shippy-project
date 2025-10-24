@@ -47,7 +47,7 @@
   
 }
 
-.main-layout-container{
+.main-layout-container-dashboard{
   grid-area: main-layout;
   background-color: white;
   display: grid;
@@ -106,3 +106,22 @@
 .main-layout::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
+.main-layout-container-newcontract{
+  grid-area: main-layout;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 60px 1fr ;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+            "header1-layout"
+            "header2-layout"
+            "data-header-layout"
+            "main-layout";
+  /* height: 100vh; */
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+
+

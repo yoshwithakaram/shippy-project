@@ -66,6 +66,7 @@ function Sidebar(){
                     </svg>
                 }
                 label="New Contract"
+                onClick={()=>{navigate('/newcontract')}}
                 /> 
                 <SidebarButton
                 icon={
