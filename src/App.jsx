@@ -9,10 +9,11 @@ import Home from "./pages/Home";
 import {BrowserRouter as Router, Routes,Route, Navigate} from 'react-router-dom';
 import Dashboard from './pages/Dashboard'
 import Newcontract from './pages/Newcontract';
-import Exporter from './pages/Exporter'
+import Exporter from './pages/MyExporter'
 import Export from './components/Export/Export'
 import NewcontractImport from './pages/NewcontractImport'
 import Ewaybill from './components/E-waybill/Ewaybill'
+import MyExporter from './pages/MyExporter'
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               <Route path='newcontract-export' element={<Export />} />
               <Route path='ewaybill' element={<Ewaybill />} />
             </Route>
-            <Route path='exporter' element={<Exporter />} />
+            <Route path='exporter' element={<MyExporter/>} />
           </Route>
         </Routes>
       </Router>
