@@ -9,7 +9,7 @@ import Datarow from '../components/Datarow/Datarow';
 import Dashboard from './Dashboard';
 import { Outlet } from 'react-router-dom';
 import Newcontract from './Newcontract';
-
+import Extraction from './Extraction';      
 function Home(){
     return(
         <>

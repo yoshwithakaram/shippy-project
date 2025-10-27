@@ -29,6 +29,7 @@ function App() {
               <Route path='ewaybill' element={<Ewaybill />} />
             </Route>
             <Route path='exporter' element={<MyExporter/>} />
+            <Route path='extraction' element={<Extraction/>}/>
           </Route>
         </Routes>
       </Router>
