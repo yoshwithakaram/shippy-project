@@ -13,6 +13,7 @@ function Navbarcomponent(){
         if (location.pathname.includes('/dashboard')) return 'Dashboard';
         if (location.pathname.includes('/newcontract')) return 'New Contract';
         if (location.pathname.includes('/exporter')) return 'My Exporters';
+        if (location.pathname.includes('/extraction')) return 'Extraction';
 
         return 'Home'; // fallback
     };

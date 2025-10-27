@@ -14,6 +14,7 @@ import Export from './components/Export/Export'
 import NewcontractImport from './pages/NewcontractImport'
 import Ewaybill from './components/E-waybill/Ewaybill'
 import MyExporter from './pages/MyExporter'
+import Extraction from './pages/Extraction'
 
 function App() {
   return (
