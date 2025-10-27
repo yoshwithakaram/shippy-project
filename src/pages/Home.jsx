@@ -9,7 +9,6 @@ import Datarow from '../components/Datarow/Datarow';
 import Dashboard from './Dashboard';
 import { Outlet } from 'react-router-dom';
 import Newcontract from './Newcontract';
-
 function Home(){
     return(
         <>
@@ -22,12 +21,11 @@ function Home(){
                 </div>
                 <div className="main-layout-container">
                     <Outlet/>
-
                 </div>
+                
             </div>
         
         </>
-
 
     );
 }

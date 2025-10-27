@@ -13,11 +13,12 @@ function Header(){
 
     return(
         <>
+     
         <div className="headerbar-div"> 
             <div className="tab-wrapper-left">
                 <Tabs
                 defaultActiveKey="Import"                         
-                className='header-nav-tabs'            
+                className='header-nav-tabs'          
                 >
                 
                     <Tab eventKey="Import" title="Import">
@@ -28,7 +29,7 @@ function Header(){
                     </Tab>
                 </Tabs>
             </div>                         
-        </div>                      
+        </div>
         </>
     );
 

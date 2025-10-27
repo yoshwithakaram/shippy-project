@@ -134,7 +134,7 @@
 
 .newcontract-top-left{
   grid-area: newcontract-top-left;
-  background-color: chocolate;
+  background-color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -144,20 +144,42 @@
 
 .newcontract-top-right{
   grid-area: newcontract-top-right;
-  background-color: rgb(93, 210, 30);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .newcontract-middle-left{
   grid-area: newcontract-middle-left;
-  background-color: pink;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .newcontract-middle-right{
   grid-area: newcontract-middle-right;
-  background-color:gold
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .newcontract-bottom{
   grid-area: newcontract-bottom;
-  background-color: bisque;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.75rem;
+ 
 }
+.newcontract-bottom .buttons{
+  display: flex;
+  /* space between buttons inside the newcontract page */
+gap: 0.75rem; /* space between Cancel, Save, Save&Send */
+  align-items: center;
+}
+

@@ -1,18 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '../components/Newcontractheader/header';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Export from '../components/Export/Export';
-import { Outlet } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-function Newcontract() {
-    const navigate=useNavigate();
+
+function Export(){
     return(
         <>
         <div className='main-layout-container-newcontract'>
-            <div className="header1-layout"> {/*present in Dashboard.jsx and App.css*/}
-                <Header/>
-            </div>
             <div className='newcontract-main'>
                 <div className="newcontract-top-left">
                     <div className="btn btn-dark px-5">Sea</div>
@@ -33,7 +25,7 @@ function Newcontract() {
                     <h4>Purchase Order</h4>
                 </div>
                 <div className="newcontract-middle-right">
-                    <h4>Select Exporter</h4>
+                    <h4>Select Importer</h4>
                     <div className='dropdown px-5'>
                     <Form.Select aria-label="Default select example">
                         <option>Select </option>
@@ -51,14 +43,8 @@ function Newcontract() {
                     </div>
                 </div>
             </div>
-            <div className="export-div" onClick={()=>{navigate('export')}}>
-                <Outlet/>
-            </div>
-
         </div>
-
         </>
-       
     );
 }
-export default Newcontract;
+export default Export;
