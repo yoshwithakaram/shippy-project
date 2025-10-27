@@ -161,3 +161,17 @@
   grid-area: newcontract-bottom;
   background-color: bisque;
 }
+
+.main-layout-container-exporter{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 60px 50px 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+              "header2-layout"
+              "data-header-layout"
+              "main-layout";
+    /* height: 100vh; */
+    overflow: hidden;
+    max-height: 100vh;
+}

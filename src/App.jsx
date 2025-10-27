@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 import Dashboard from './pages/Dashboard'
 import Newcontract from './pages/Newcontract';
+import Exporter from './pages/Exporter'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home/>} >
           <Route path='dashboard' element={<Dashboard/>}/>
           <Route path='newcontract' element={<Newcontract/>}/>
+          <Route path='exporter' element={<Exporter/>}/>
 
         </Route>
       </Routes>

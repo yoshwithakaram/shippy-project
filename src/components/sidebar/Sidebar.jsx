@@ -83,6 +83,7 @@ function Sidebar(){
                     </svg>
                 }
                 label="My Exporters"
+                onClick={()=>{navigate('/exporter')}}   
                 /> 
                 <SidebarButton
                 icon={
