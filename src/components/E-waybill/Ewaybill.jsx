@@ -5,8 +5,7 @@ function Ewaybill(){
     };
     return(
         <>
-        <div className='main-layout-container-newcontract'>
-            <div className='Ewaybill-main'>
+
                 <div className="bill-top-left">
                     <div className="btn btn-dark px-5">Import</div>
                     <div className="btn btn-light px-5">Export</div>
@@ -15,9 +14,7 @@ function Ewaybill(){
                     <div className="btn btn-dark px-5">Sea</div>
                     <div className="btn btn-light px-5">Air</div>
                 </div>
-            </div>
 
-        </div>
         </>
     );
 }   

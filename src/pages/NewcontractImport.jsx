@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 
-function Export(){
+
+function NewcontractImport(){
     return(
         <>
-
                 <div className="newcontract-top-left">
                     <div className="btn btn-dark px-5">Sea</div>
                     <div className="btn btn-light px-5">Air</div>
@@ -24,7 +24,7 @@ function Export(){
                     <h4>Purchase Order</h4>
                 </div>
                 <div className="newcontract-middle-right">
-                    <h4>Select Importer</h4>
+                    <h4>Select Exporter</h4>
                     <div className='dropdown px-5'>
                     <Form.Select aria-label="Default select example">
                         <option>Select </option>
@@ -40,9 +40,10 @@ function Export(){
                         <div className='btn btn-secondary px-5'>Save</div>
                         <div className='btn btn-secondary px-5'>Save&Send</div>
                     </div>
-                </div>
-
+                </div>       
         </>
+
     );
 }
-export default Export;
+
+export default NewcontractImport
