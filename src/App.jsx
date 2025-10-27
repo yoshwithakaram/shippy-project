@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 import Dashboard from './pages/Dashboard'
 import Newcontract from './pages/Newcontract';
+import Extraction from './pages/Extraction';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path='/' element={<Home/>} >
           <Route path='dashboard' element={<Dashboard/>}/>
           <Route path='newcontract' element={<Newcontract/>}/>
-
+          <Route path='extraction' element={<Extraction/>}/>
         </Route>
       </Routes>
     </Router>

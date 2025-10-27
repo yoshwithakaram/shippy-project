@@ -170,6 +170,7 @@ function Sidebar(){
                     </svg> 
                 }
                 label="Extraction"
+                onClick={()=>{navigate('/extraction')}}
                 /> 
                 <SidebarButton
                 icon={
