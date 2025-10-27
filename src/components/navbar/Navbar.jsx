@@ -1,9 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Dropdown, Form, Image, Navbar, Offcanvas } from 'react-bootstrap';
 import "./Navbar.css";
+import { useLocation } from 'react-router-dom';
 
 
 function Navbarcomponent(){
+    const location = useLocation();
+
+    // Map route paths to display names
+    const getPageTitle = () => {
+        if (location.pathname.includes('/analytics')) return 'Analytics';
+        if (location.pathname.includes('/dashboard')) return 'Dashboard';
+        if (location.pathname.includes('/newcontract')) return 'New Contract';
+        if (location.pathname.includes('/exporter')) return 'My Exporters';
+
+        return 'Home'; // fallback
+    };
+
     return(
         <>
         <div className="navbar shadow-sm">
@@ -22,7 +35,7 @@ function Navbarcomponent(){
                     </svg>
                 </div>
                 <div className="pagename">
-                    <h2 className='p-0 m-0'>Dashboard</h2>
+                    <h2 className='p-0 m-0'>{getPageTitle()}</h2>
                 </div>
             </div>
 

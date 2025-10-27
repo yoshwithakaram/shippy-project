@@ -1,0 +1,37 @@
+.myexporter-row-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+  gap: 8px;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.custom-switch-black .form-check-input {
+  width: 3rem;
+  height: 1.5rem;
+  transform: scale(1.); /* Optional: scales the whole switch */
+}
+
+/* Change the switch color when it's ON */
+.custom-switch-black .form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
+
+/* Optional: change the knob color */
+.custom-switch-black .form-check-input:checked::before {
+  background-color: white;
+}
+
+.MyExporter-btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    cursor: pointer;
+}
+
+.custom-border {
+  border: 1px solid grey;
+}

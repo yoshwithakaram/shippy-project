@@ -2,6 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dataheader from "../components/Dataheader/Dataheader";
 import Subheader from "../components/Subheader/Subheader";
 import { Form } from 'react-bootstrap';
+import Datarow from '../components/Datarow/Datarow';
+import MyExporterDataRow from '../components/MyExporter/MyExporterDataRow';
+import MyExporterDataHeader from '../components/MyExporter/MyExporterDataHeader';
 
 function MyExporter(){
     return(
@@ -22,16 +25,18 @@ function MyExporter(){
                 </div>
                 <div className="subheader-sec-right">
                     <div className="btn btn-dark">
-                        New Contract
+                        New +
                     </div>
                 </div>          
             </div>
             
             <div className="data-header-layout">
-                <Dataheader/>
+                <MyExporterDataHeader/>
             </div>
             <div className="main-layout">
-  
+                <MyExporterDataRow/>
+                <MyExporterDataRow/>
+                <MyExporterDataRow/>
             </div>
         </div>
 
