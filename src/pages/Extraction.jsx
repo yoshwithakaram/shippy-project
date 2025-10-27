@@ -1,6 +1,7 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Extractionheader from '../components/Extractionheader/Extractionheader';
+import Extractiondata from '../components/Extractionheader/Extractiondata';
 import  {Form} from 'react-bootstrap';
-import Dataheader from "../components/Dataheader/Dataheader";
 function Extraction(){
     return(
         <>
@@ -22,7 +23,10 @@ function Extraction(){
             </div>             
         </div>
         <div className="data-header-layout ">
-                <Dataheader/>
+            <Extractionheader/>                
+        </div>
+        <div className="data-rows-layout">
+            <Extractiondata/>
         </div>
         </>
     );
