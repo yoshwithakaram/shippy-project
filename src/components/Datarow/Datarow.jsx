@@ -49,8 +49,8 @@ function Datarow({label}) {
 
   let borderClass = 'custom-border'; // default black
 
-  if (label === 'Exporter') borderClass = 'orange-border';
-  else if (label === 'Importer') borderClass = 'green-border';
+  if (label.startsWith('Exporter')) borderClass = 'orange-border';
+  else if (label.startsWith('Importer')) borderClass = 'green-border';
 
   return (
     // <div className="expandable-box">
