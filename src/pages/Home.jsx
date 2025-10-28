@@ -2,14 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Sidebar from '../components/sidebar/Sidebar';
 import Navbar from '../components/navbar/Navbar';
 import Navbarcomponent from '../components/navbar/Navbar';
-import Headerbar from '../components/headerbar/headerbar';
-import Subheader from '../components/Subheader/Subheader';
-import Dataheader from '../components/Dataheader/Dataheader';
-import Datarow from '../components/Datarow/Datarow';
-import Dashboard from './Dashboard';
 import { Outlet } from 'react-router-dom';
-import Newcontract from './Newcontract';
-import Extraction from './Extraction';      
+ 
+     
 function Home(){
     return(
         <>
