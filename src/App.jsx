@@ -15,6 +15,7 @@ import NewcontractImport from './pages/NewcontractImport'
 import Ewaybill from './components/E-waybill/Ewaybill'
 import MyExporter from './pages/MyExporter'
 import Extraction from './pages/Extraction'
+import Myvendors from './pages/Myvendors';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             </Route>
             <Route path='exporter' element={<MyExporter/>} />
             <Route path='extraction' element={<Extraction/>}/>
+            <Route path='myvendors' element={<Myvendors/>}/>
           </Route>
         </Routes>
       </Router>

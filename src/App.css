@@ -212,3 +212,22 @@ gap: 0.75rem; /* space between Cancel, Save, Save&Send */
     overflow: hidden;
     max-height: 100vh;
 }
+.main-layout-container-Myvendors{
+    /* grid-area: main-layout; */
+    grid-area:main-layout-container-Myvendors ;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 90px 50px 40px 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+              "header1-layout"
+              "header2-layout"
+              "data-header-layout"
+              "myvendor-main-layout";
+    height: 100vh;
+  
+  }
+
+.myvendor-main-layout{
+  grid-area: myvendor-main-layout;
+}
