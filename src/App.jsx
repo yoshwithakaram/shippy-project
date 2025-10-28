@@ -18,6 +18,7 @@ import DashboardAll from './components/DashboardTabs/DashboardAll'
 import DashboardImport from './components/DashboardTabs/DashboardImport'
 import DashboardExport from './components/DashboardTabs/DashboardExport'
 import NewcontractImport from './components/NewContract/NewcontractImport'
+import Myvendors from './pages/Myvendors';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             </Route>
             <Route path='exporter' element={<MyExporter/>} />
             <Route path='extraction' element={<Extraction/>}/>
+            <Route path='myvendors' element={<Myvendors/>}/>
           </Route>
         </Routes>
       </Router>
