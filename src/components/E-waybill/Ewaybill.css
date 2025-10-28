@@ -1,0 +1,13 @@
+
+.icon-div{
+    display: flex;   
+    gap: 3rem;
+}
+.custom-display{
+    display: flex;
+    justify-content: space-between;
+}
+.custom-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
