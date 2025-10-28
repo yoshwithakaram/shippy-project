@@ -15,6 +15,9 @@ import NewcontractImport from './pages/NewcontractImport'
 import Ewaybill from './components/E-waybill/Ewaybill'
 import MyExporter from './pages/MyExporter'
 import Extraction from './pages/Extraction'
+import DashboardAll from './components/DashboardTabs/DashboardAll'
+import DashboardImport from './components/DashboardTabs/DashboardImport'
+import DashboardExport from './components/DashboardTabs/DashboardExport'
 
 function App() {
   return (
@@ -22,7 +25,13 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />}>
-            <Route path='dashboard' element={<Dashboard />} />
+            <Route path='dashboard' element={<Dashboard />} >
+            <Route index element={<Navigate to="dashboard-all" replace />} />
+              <Route path='dashboard-all' element={<DashboardAll />} />
+              <Route path='dashboard-import' element={<DashboardImport />} />
+              <Route path='dashboard-export' element={<DashboardExport />} />
+            </Route>
+
             <Route path='newcontract' element={<Newcontract />}>
               <Route index element={<Navigate to="newcontract-import" replace />} />
               <Route path='newcontract-import' element={<NewcontractImport />} />

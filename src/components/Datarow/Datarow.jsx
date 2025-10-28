@@ -8,12 +8,12 @@ import stage5 from '../../assets/stage5.svg';
 import tick from '../../assets/tick.svg';
 import { Card, Image, ListGroup, ProgressBar } from 'react-bootstrap';
 
-function Datarowitem() {
+function Datarowitem({label}) {
   return (
     <>
         <div className="heading-cell">
         <p className="heading-label">
-            Importer
+            {label}
         </p>
         </div>
         <div className="heading-cell">
@@ -42,15 +42,23 @@ function Datarowitem() {
   );
 }
 
-function Datarow() {
+function Datarow({label}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleBox = () => setIsOpen(!isOpen);
 
+  let borderClass = 'custom-border'; // default black
+
+  if (label === 'Exporter') borderClass = 'orange-border';
+  else if (label === 'Importer') borderClass = 'green-border';
+
   return (
-    <div className="expandable-box">
+    // <div className="expandable-box">
+    <div className={`expandable-box ${borderClass}`}>
+
       <div className="box-header row-grid">
-        <Datarowitem />
+        <Datarowitem label={label}/>
+
         <div className="box-button-wrapper">
             <div className="heading-cell">
                 <p className="heading-label">

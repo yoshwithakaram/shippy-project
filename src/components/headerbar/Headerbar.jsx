@@ -2,6 +2,7 @@ import { Tab, Tabs } from 'react-bootstrap';
 import './Headerbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Headerbar(){
     const [activeTab, setActiveTab] = useState(null); // no tab active initially
@@ -10,13 +11,28 @@ function Headerbar(){
         setActiveTab(prev => (prev === key ? null : key));
     };
 
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const getActiveTab = () => {
+        if (location.pathname.includes('dashboard-all')) return 'All';
+        if (location.pathname.includes('dashboard-import')) return 'Import';
+        if (location.pathname.includes('dashboard-export')) return 'Export';
+        return null;
+    };
+
 
     return(
         <>
         <div className="headerbar-div">
             <div className="tab-wrapper-left">
                 <Tabs
-                defaultActiveKey="All"                         
+                    activeKey={getActiveTab()}
+                    onSelect={(key) => {
+                        if (key === 'All') navigate('/dashboard/dashboard-all');
+                        else if (key === 'Import') navigate('/dashboard/dashboard-import');
+                        else if (key === 'Export') navigate('/dashboard/dashboard-export');
+                    }}                        
                 className='header-nav-tabs'            
                 >
                 

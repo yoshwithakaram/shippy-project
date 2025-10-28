@@ -3,6 +3,7 @@ import Dataheader from "../components/Dataheader/Dataheader";
 import Datarow from "../components/Datarow/Datarow";
 import Headerbar from "../components/headerbar/headerbar";
 import Subheader from "../components/Subheader/Subheader";
+import { Outlet } from 'react-router-dom';
 
 
 
@@ -20,16 +21,7 @@ function Dashboard(){
                 <Dataheader/>
             </div>
             <div className="main-layout">
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
-                <Datarow/>
+                <Outlet/>
             </div>
         </div>
 

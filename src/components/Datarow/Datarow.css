@@ -8,12 +8,24 @@
 }
 
 .expandable-box {
-  border: 1px solid #ddd;
-  border-radius: 6px;
+
+
   margin-bottom: 12px;
   background-color: #fff;
-  border: 2px solid rgb(84, 174, 111);
+  /* border: 2px solid rgb(84, 174, 111); */
   border-radius: 10px;
+}
+
+.custom-border {
+  border: 2px solid black;
+}
+
+.orange-border {
+  border: 2px solid orange;
+}
+
+.green-border {
+  border: 2px solid rgb(84, 174, 111);
 }
 
 .box-header {
