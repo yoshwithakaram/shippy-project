@@ -101,6 +101,7 @@ function Sidebar(){
                     </svg> 
                 }
                 label="My Vendors"
+                onClick={()=>{navigate('/myvendors')}}  
                 /> 
                 <SidebarButton
                 icon={
