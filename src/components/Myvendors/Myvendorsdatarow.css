@@ -1,6 +1,6 @@
 .myvendors-row-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 7 equal columns */
+  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
   gap: 8px;
   align-items: center;
   justify-items: center;

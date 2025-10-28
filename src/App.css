@@ -110,7 +110,7 @@
 
 .main-layout-container-newcontract{
   /* grid-area: main-layout; */
-  background-color:aqua;
+  background-color:white;
   display: grid;
   grid-template-rows: 60px 1fr ;
   grid-template-columns: 1fr;
@@ -212,22 +212,30 @@ gap: 0.75rem; /* space between Cancel, Save, Save&Send */
     overflow: hidden;
     max-height: 100vh;
 }
-.main-layout-container-Myvendors{
-    /* grid-area: main-layout; */
-    grid-area:main-layout-container-Myvendors ;
+
+.myvendor-wrapper{
+  background-color:white;
+  display: grid;
+  grid-template-rows: 60px 1fr ;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+            "header1-layout"
+            "main-layout-container-myvendors";
+  height: 100vh;
+
+}
+
+
+.main-layout-container-myvendors{
+    grid-area: main-layout-container-myvendors ;
     background-color: white;
     display: grid;
-    grid-template-rows: 90px 50px 40px 1fr ;
+    grid-template-rows: 60px 40px 1fr ;
     grid-template-columns: 1fr;
     grid-template-areas: 
-              "header1-layout"
               "header2-layout"
               "data-header-layout"
-              "myvendor-main-layout";
+              "main-layout";
     height: 100vh;
   
   }
-
-.myvendor-main-layout{
-  grid-area: myvendor-main-layout;
-}

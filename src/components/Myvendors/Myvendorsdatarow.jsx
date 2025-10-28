@@ -29,7 +29,7 @@ function Myvendorsdatarow(){
                     </div>
                     <div className="heading-cell">
                         <p className="heading-label">
-                            5/5/2025
+                            05/05/2025
                         </p>
                     </div>                    
                     <div className='MyExporter-btn-div'>

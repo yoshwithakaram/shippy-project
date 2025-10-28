@@ -201,7 +201,7 @@ function Datarow({label}) {
                         <div className="sec-div">
                             <div className="item-disabled">
                                 <p className='m-0'>Fright Forward</p>
-                                <p className="sec-item m-0">Importer:Importer test 1</p>
+                                <p className="sec-item m-0">{label}</p>
                             </div>
                         </div>
                         <div className="sec-div">

@@ -11,7 +11,7 @@ function Myvendorsheader(){
                         className='header-nav-tabs'            
                         >
                         
-                            <Tab eventKey="Freight forwarder" title="Freight forwarder">
+                            <Tab eventKey="Freight forwarder" title="Freight Forwarder">
                             </Tab>
                             <Tab eventKey="CHA" title="CHA">
                             </Tab>
