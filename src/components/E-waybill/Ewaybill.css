@@ -1,7 +1,8 @@
 
 .icon-div{
     display: flex;   
-    gap: 3rem;
+    justify-content: space-evenly;
+    width: 50%;
 }
 .custom-display{
     display: flex;
@@ -11,3 +12,9 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.fixed-width-select{
+    width: 200px;
+}
+
+

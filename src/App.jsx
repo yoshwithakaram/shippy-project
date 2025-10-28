@@ -11,13 +11,13 @@ import Dashboard from './pages/Dashboard'
 import Newcontract from './pages/Newcontract';
 import Exporter from './pages/MyExporter'
 import Export from './components/Export/Export'
-import NewcontractImport from './pages/NewcontractImport'
 import Ewaybill from './components/E-waybill/Ewaybill'
 import MyExporter from './pages/MyExporter'
 import Extraction from './pages/Extraction'
 import DashboardAll from './components/DashboardTabs/DashboardAll'
 import DashboardImport from './components/DashboardTabs/DashboardImport'
 import DashboardExport from './components/DashboardTabs/DashboardExport'
+import NewcontractImport from './components/NewContract/NewcontractImport'
 
 function App() {
   return (

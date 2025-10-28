@@ -10,18 +10,26 @@ function Export(){
                     <div className="btn btn-light px-5">Air</div>
                 </div>
                 <div className="newcontract-top-right">
-                    <h4>Inco Terms</h4>
+                    <div className="h4">Inco Terms</div>
                     <div className='dropdown px-5'>
-                    <Form.Select aria-label="Default select example">
-                        <option>Select </option>
-                        <option value="1">FOB</option>
-                        <option value="2">CIF</option>
-                        <option value="3">CFR</option>
-                    </Form.Select>
+                        <Form.Select className= 'fixed-width-select' size={5} label="Default select example">
+                            <option>Select </option>
+                            <option value="1">FOB</option>
+                            <option value="2">CFR</option>
+                            <option value="3">CIF</option>
+                            <option value="1">DPU</option>
+                            <option value="2">FAS</option>
+                            <option value="3">DDP</option>
+                            <option value="3">DAP</option>
+                            <option value="1">CIP</option>
+                            <option value="2">CPT</option>
+                            <option value="3">FCA</option>
+                            <option value="3">EXW</option>
+                        </Form.Select>
                     </div>
                 </div>
                 <div className="newcontract-middle-left custom-display">
-                    <h4>Purchase Order</h4>
+                    <div className="h4">Purchase Order</div>
                     <div className='icon-div'>
                         <div className="heading-cell">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -66,11 +74,11 @@ function Export(){
                 <div className="newcontract-middle-right">
                     <h4>Select Importer</h4>
                     <div className='dropdown px-5'>
-                    <Form.Select aria-label="Default select example">
+                    <Form.Select className= 'fixed-width-select' aria-label="Default select example">
                         <option>Select </option>
-                        <option value="1">Exporter 2</option>
-                        <option value="2">Test User19</option>
-                        <option value="3">Verve Greens</option>
+                        <option value="1">Importer 1</option>
+                        <option value="2">Test User2</option>
+                        <option value="3">Shippy Importer</option>
                     </Form.Select>
                     </div>
                 </div>

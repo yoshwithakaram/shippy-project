@@ -1,22 +1,35 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ewaybill.css';
-function Ewaybill(){
+import Form from 'react-bootstrap/Form';
 
+
+function NewcontractImport(){
     return(
         <>
-
                 <div className="newcontract-top-left">
-                    <div className="btn btn-dark px-5">Import</div>
-                    <div className="btn btn-light px-5">Export</div>
-                </div>
-                <div className="newcontract-top-right custom-flex">
                     <div className="btn btn-dark px-5">Sea</div>
                     <div className="btn btn-light px-5">Air</div>
                 </div>
-                <div className="newcontract-middle-left custom-display">
-                    <div className='h4' >
-                    Final Bill of Entry
+                <div className="newcontract-top-right">
+                    <div className="h4">Inco Terms</div>
+                    <div className='dropdown px-5'>
+                    <Form.Select className= 'fixed-width-select' size={5} aria-label="Default select example">
+                        <option>Select </option>
+                        <option value="1">FOB</option>
+                        <option value="2">CFR</option>
+                        <option value="3">CIF</option>
+                        <option value="1">DPU</option>
+                        <option value="2">FAS</option>
+                        <option value="3">DDP</option>
+                        <option value="3">DAP</option>
+                        <option value="1">CIP</option>
+                        <option value="2">CPT</option>
+                        <option value="3">FCA</option>
+                        <option value="3">EXW</option>
+                    </Form.Select>
                     </div>
+                </div>
+                <div className="newcontract-middle-left custom-display">
+                    <div className="h4">Purchase Order</div>
                     <div className='icon-div'>
                         <div className="heading-cell">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -58,12 +71,27 @@ function Ewaybill(){
                         </div>
                     </div>
                 </div>
-                <div className="newcontract-middle-right"></div>
-                <div className="newcontract-bottom">
-                    <div className='btn btn-secondary'>Generate E-Way Bill</div>
+                <div className="newcontract-middle-right">
+                    <div className="h4">Select Exporter</div>
+                    <div className='dropdown px-5'>
+                    <Form.Select className= 'fixed-width-select' aria-label="Default select example">
+                        <option>Select </option>
+                        <option value="1">Exporter 1</option>
+                        <option value="2">Test User1</option>
+                        <option value="3">Shippy Exporter</option>
+                    </Form.Select>
+                    </div>
                 </div>
-
+                <div className="newcontract-bottom">
+                    <div className='buttons'>
+                        <div className='btn btn-light px-5 border-black'>Cancel</div>
+                        <div className='btn btn-secondary px-5'>Save</div>
+                        <div className='btn btn-secondary px-4'>Save & Send</div>
+                    </div>
+                </div>       
         </>
+
     );
-}   
-export default Ewaybill;
+}
+
+export default NewcontractImport

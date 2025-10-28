@@ -13,7 +13,7 @@ function Sidebar(){
        <div className="sidebar-container">      
             <div className="logo-container">
                 <Image src={shippy} rounded />
-                <h2 className="logo-text">SHIPPY</h2>                
+                <div className="h4 logo-text">SHIPPY</div>                
             </div>
             <div className='container-sidebar-components'>
                 <SidebarButton
