@@ -137,6 +137,7 @@ function Sidebar(){
                     </svg> 
                 }
                 label="My Queries"
+                onClick={()=>{navigate('/myqueries')}} 
                 /> 
                 <SidebarButton
                 icon={

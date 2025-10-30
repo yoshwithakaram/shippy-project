@@ -239,3 +239,29 @@ gap: 0.75rem; /* space between Cancel, Save, Save&Send */
     height: 100vh;
   
   }
+  .myqueries-wrapper{
+  background-color:red;
+  display: grid;
+  grid-template-rows: 60px 1fr ;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+            "header1-layout"
+            "main-layout-container-myqueries";
+  height: 100vh;
+
+}
+.main-layout-container-myqueries{
+    grid-area: main-layout-container-myqueries ;
+    background-color: pink;
+    display: grid;
+    grid-template-rows: 60px 40px 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+              "header2-layout"
+              "data-header-layout"
+              "main-layout";
+    height: 100vh;
+  
+  }
+ 
+  
