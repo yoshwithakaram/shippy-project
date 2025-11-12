@@ -1,0 +1,11 @@
+.custom-green{
+    color: green;
+}
+
+.custom-cursor{
+    cursor: pointer;
+}
+.custom-flex{
+    display: flex;
+    gap: 10px;
+}
