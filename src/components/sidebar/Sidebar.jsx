@@ -226,6 +226,7 @@ function Sidebar(){
                     </svg> 
                 }
                 label="Support"
+                onClick={()=>{navigate('/support')}}
                 /> 
 
             </div>   
