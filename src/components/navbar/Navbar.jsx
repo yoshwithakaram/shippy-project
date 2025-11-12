@@ -15,6 +15,7 @@ function Navbarcomponent(){
         if (location.pathname.includes('/exporter')) return 'My Exporters';
         if (location.pathname.includes('/myvendors')) return 'My Vendors';
         if (location.pathname.includes('/extraction')) return 'Extraction';
+        if (location.pathname.includes('/support')) return 'Support';
 
         return 'Home'; // fallback
     };
