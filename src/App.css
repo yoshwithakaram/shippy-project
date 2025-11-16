@@ -253,3 +253,31 @@ gap: 0.75rem; /* space between Cancel, Save, Save&Send */
     overflow: hidden;
     max-height: 100vh;
 }
+
+.myqueries-wrapper{
+    background-color:white;
+  display: grid;
+  grid-template-rows: 60px 1fr ;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+            "header1-layout"
+            "main-layout-container-myqueries";
+  height: 100vh;
+
+}
+
+.main-layout-container-myqueries{
+  background-color: white;
+    display: grid;
+    grid-template-rows: 60px 50px 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+              "header2-layout"
+              "data-header-layout"
+              "main-layout";
+    /* height: 100vh; */
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+

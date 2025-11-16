@@ -1,4 +1,4 @@
-function Myquriesdatarow(){
+function Myqueriesdatarow(){
     return(
         <>
         <div className="expandable-box custom-border ">
@@ -61,4 +61,4 @@ function Myquriesdatarow(){
     );
 
 }
-export default Myquriesdatarow;
+export default Myqueriesdatarow;
