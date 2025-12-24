@@ -8,14 +8,28 @@ import stage5 from '../../assets/stage5.svg';
 import tick from '../../assets/tick.svg';
 import { Card, Image, ListGroup, ProgressBar } from 'react-bootstrap';
 
+/**
+ * DATA FLOW: Datarowitem Component - Displays Basic Shipment Info
+ * 
+ * This is a presentational component that receives data via props and displays it.
+ * 
+ * Props Flow:
+ * - Receives {label} prop from parent Datarow component
+ * - Displays label (e.g., "Importer 1", "Exporter 1") in the first column
+ * - Other data (Contract ID, Date, PO Number, Status) is currently hardcoded
+ * 
+ * Data Flow Pattern: Props in → UI Rendering
+ */
 function Datarowitem({label}) {
   return (
     <>
+        {/* DATA FLOW: label prop is displayed here - shows importer/exporter name */}
         <div className="heading-cell">
         <p className="heading-label">
             {label}
         </p>
         </div>
+        {/* DATA FLOW: Static data - in real app would come from props/API */}
         <div className="heading-cell">
             <div className="heading-label">
                 <div><p className="underlined">SC10099009</p></div>
@@ -42,21 +56,56 @@ function Datarowitem({label}) {
   );
 }
 
+/**
+ * DATA FLOW: Datarow Component - Expandable Shipment Row
+ * 
+ * This component demonstrates key React data flow patterns:
+ * 
+ * 1. PROPS FLOW (Unidirectional):
+ *    - Receives {label} prop from parent (DashboardAll)
+ *    - Passes label to child component (Datarowitem)
+ * 
+ * 2. STATE MANAGEMENT (Local):
+ *    - Uses useState hook to manage expand/collapse state (isOpen)
+ *    - User clicks toggle → toggleBox() called → setIsOpen updates state → component re-renders
+ * 
+ * 3. CONDITIONAL RENDERING:
+ *    - {isOpen && <expanded content>} - content only renders when isOpen is true
+ * 
+ * 4. DERIVED DATA (Computed values):
+ *    - borderClass is computed based on label value
+ *    - Shows how data can determine styling
+ * 
+ * Data Flow Diagram:
+ * Parent (DashboardAll) 
+ *   → passes label prop 
+ *   → Datarow receives & stores in local state (isOpen)
+ *   → passes label to Datarowitem
+ *   → User interaction updates isOpen
+ *   → Component re-renders with new state
+ */
 function Datarow({label}) {
+  // DATA FLOW: Local state - tracks whether this row is expanded (true) or collapsed (false)
   const [isOpen, setIsOpen] = useState(false);
 
+  // DATA FLOW: Event handler - when called, toggles the isOpen state
+  // Flow: User clicks → toggleBox called → setIsOpen(!isOpen) → state updates → re-render
   const toggleBox = () => setIsOpen(!isOpen);
 
+  // DATA FLOW: Derived/computed data - CSS class based on label prop value
+  // This shows conditional styling based on data
   let borderClass = 'custom-border'; // default black
 
+  // DATA FLOW: Conditional logic based on data value
   if (label.startsWith('Exporter')) borderClass = 'orange-border';
   else if (label.startsWith('Importer')) borderClass = 'green-border';
 
   return (
-    // <div className="expandable-box">
+    // DATA FLOW: borderClass (derived from label prop) dynamically styles the component
     <div className={`expandable-box ${borderClass}`}>
 
       <div className="box-header row-grid">
+        {/* DATA FLOW: Passing label prop down to child component */}
         <Datarowitem label={label}/>
 
         <div className="box-button-wrapper">
@@ -97,8 +146,11 @@ function Datarow({label}) {
                 </p>
             </div>
 
+            {/* DATA FLOW: Toggle button - onClick event triggers state change */}
             <div className="caret-cell">
+                {/* DATA FLOW: Event Flow: User clicks → toggleBox() → setIsOpen(!isOpen) → re-render */}
                 <div className="caret-button" onClick={toggleBox}>
+                    {/* DATA FLOW: Icon dynamically changes based on isOpen state (ternary operator) */}
                     <svg xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -128,9 +180,11 @@ function Datarow({label}) {
         </div>
       </div>
 
+      {/* DATA FLOW: Conditional Rendering - expanded content only renders when isOpen === true */}
+      {/* This is a key React pattern: state controls what renders */}
       {isOpen && (
         <div className="box-content-expanded">
-          {/* Expanded content */}
+          {/* Expanded content - shows detailed shipment information and task list */}
           <div className="expanded-row">
             <div className="expanded-row-wrapper">
                 <div className="expanded-section-top">
