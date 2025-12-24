@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dataheader from "../components/Dataheader/Dataheader";
 import Datarow from "../components/Datarow/Datarow";
-import Headerbar from "../components/headerbar/headerbar";
+import Headerbar from "../components/headerbar/Headerbar";
 import Subheader from "../components/Subheader/Subheader";
 import { Outlet } from 'react-router-dom';
 

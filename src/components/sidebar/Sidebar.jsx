@@ -2,8 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Image, Navbar, Offcanvas } from 'react-bootstrap';
 import shippy from '../../assets/shippy.png'
 import './Sidebar.css'
-import { useState } from 'react';
-import SidebarButton from './sidebarButton';
+import SidebarButton from './SidebarButton';
 import { useNavigate } from 'react-router-dom';
 
 /**

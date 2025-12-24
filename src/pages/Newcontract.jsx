@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '../components/Newcontractheader/header';
+import Header from '../components/Newcontractheader/Header';
 import { Outlet } from 'react-router-dom';
 
 function Newcontract() {
