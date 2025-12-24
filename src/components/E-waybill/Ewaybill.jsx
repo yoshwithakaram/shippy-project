@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ewaybill.css';
+import './Ewaybill.css';
 function Ewaybill(){
 
     return(

@@ -2,11 +2,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Image, Navbar, Offcanvas } from 'react-bootstrap';
 import shippy from '../../assets/shippy.png'
 import './Sidebar.css'
-import { useState } from 'react';
-import SidebarButton from './sidebarButton';
+import SidebarButton from './SidebarButton';
 import { useNavigate } from 'react-router-dom';
 
+/**
+ * DATA FLOW: Sidebar Component - Navigation Menu
+ * 
+ * This component provides the main navigation for the application.
+ * It demonstrates the navigation/routing data flow pattern in React Router.
+ * 
+ * Navigation Flow:
+ * 1. Component imports useNavigate hook from React Router
+ * 2. Each SidebarButton receives an onClick handler
+ * 3. User clicks button → onClick fires → navigate('/path') called → URL changes
+ * 4. React Router detects URL change → matches route → renders corresponding component
+ * 
+ * Data Flow Pattern:
+ * User Interaction → Event Handler → navigate() → URL Change → Router → Component Render
+ * 
+ * Props Flow:
+ * - Each SidebarButton receives icon, label, and onClick props
+ * - SidebarButton is a presentational component that renders the button with these props
+ */
 function Sidebar(){
+    // DATA FLOW: useNavigate hook provides navigate() function for programmatic navigation
+    // This allows JavaScript code to change routes (vs clicking <Link> components)
     const navigate=useNavigate();
     return(
         <>
@@ -16,6 +36,9 @@ function Sidebar(){
                 <div className="h4 logo-text">SHIPPY</div>                
             </div>
             <div className='container-sidebar-components'>
+                {/* DATA FLOW: Navigation buttons - each has an onClick that triggers route change */}
+                
+                {/* Analytics button - no onClick handler, so no navigation occurs */}
                 <SidebarButton
                 icon={
                     <svg
@@ -33,6 +56,8 @@ function Sidebar(){
                 }
                 label="Analytics"
                 /> 
+                {/* DATA FLOW: Dashboard button - onClick triggers navigate('/dashboard') */}
+                {/* Flow: Click → navigate('/dashboard') → Router matches → Dashboard component renders */}
                 <SidebarButton
                 icon={
                     <svg
@@ -51,6 +76,7 @@ function Sidebar(){
                 label="Dashboard"
                 onClick={()=>{navigate('/dashboard')}}               
                 /> 
+                {/* DATA FLOW: New Contract button - navigates to /newcontract route */}
                 <SidebarButton
                 icon={
                     <svg xmlns="http://www.w3.org/2000/svg" 
